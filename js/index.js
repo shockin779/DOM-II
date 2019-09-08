@@ -95,8 +95,9 @@ body.addEventListener('copy', event => {
 });
 
 
-// 10. If someone tries to delete a Node from the DOM, redirect them to lmgtfy
-window.addEventListener('DOMNodeRemoved', event => {
+// 10. If someone tries to delete anything in the footer from the DOM, it
+// redirect them to lmgtfy
+footer.addEventListener('DOMNodeRemoved', event => {
     console.log('event happened')
     window.open('https://lmgtfy.com/?q=How+to+code+in+javascript', '_blank');
 });
