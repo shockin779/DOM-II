@@ -91,7 +91,7 @@ window.addEventListener('resize', event => {
 // 9. Alert when someone copies something anywhere on the page
 // This is to make sure propogation is being stopped from the footer copy event
 body.addEventListener('copy', event => {
-    console.log('you have copied something in the body')
+    alert('you have copied something in the body')
 });
 
 
